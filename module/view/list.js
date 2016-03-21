@@ -16,6 +16,9 @@ define(function (require, exports, module) {
 							class: "l db",
 							onclick: function () {
 								model.checked(this.checked);
+							},
+						    config: function(element){
+								element.checked = model.checked();
 							}
 						}),
 						span = m("span", {
